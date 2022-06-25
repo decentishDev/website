@@ -9,7 +9,7 @@
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="styles.css" rel="stylesheet" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -19,21 +19,47 @@
     </head>
     <body>
         <!-- Navigation-->
-        <br>
-        <br>
-        <br>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html#news">News</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="privacy-policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <!-- Page Content-->
         <section id="About">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-12">
-                        <a href="index.html">Back</a>
-                        <h1 class="mt-4" >Privacy Policy</h1>
-                        <p>Last updated: Jan 4th, 2021</p>
+                        <a class="btn btn-outline-light btn-sm px-4" href="javascript:window.history.back();">&lt; Back</a>
                         <br>
-                        <p>This website (https://decentishDev.com) collects no personal data of any kind and doesn't store any data on your device. However, we do contain links to other websites that may collect and store your data. Their privacy policy along with the ways they collect and store data is listed on those specific websites. I (decentishDev) am able to see a small portion of those statistics for the third-party websites, such as the number of people who have viewed the website. I am only able to view their data that has to do with me or the content I've uploaded to these third-party websites.</p>
                         <br>
-                        <p>Any games or other software I (decentishDev) have created and promoted do collect data, but only the number of downloads, daily players, and ads run. These statistics are provided by the software I used to create the games. Their privacy policy can be view at https://unity3d.com/legal/privacy-policy The games are also hosted and downloaded by external third-party sites which may collect other data. Again, these third-party sites show me (decentishDev) simple statistics such as the number of views my download site has, but these only have to do with content I've created and uploaded.</p>
+                        <div class="card border-5 shadow rounded-5 overflow-hidden">
+                            <div class="card-body background-color-light p-10">
+                                <div class="row gx-10">
+                                    <div class="col-lg-0 col-xl-0 py-lg-0">
+                                        <div class="p-10 p-md-10">
+                                            
+                                            <div class="h2 fw-bolder">Privacy Policy</div>
+                                            <p>Last updated: Jan 4th, 2021</p>
+                                            <br>
+                                            <p>This website (https://decentishDev.com) collects no personal data of any kind and doesn't store any data on your device. However, we do contain links to other websites that may collect and store your data. Their privacy policy along with the ways they collect and store data is listed on those specific websites. I (decentishDev) am able to see a small portion of those statistics for the third-party websites, such as the number of people who have viewed the website. I am only able to view their data that has to do with me or the content I've uploaded to these third-party websites.</p>
+                                            <br>
+                                            <p>Any games or other software I (decentishDev) have created and promoted do collect data, but only the number of downloads, daily players, and ads run. These statistics are provided by the software I used to create the games. Their privacy policy can be viewed at https://unity3d.com/legal/privacy-policy. The games are also hosted and downloaded by external third-party sites which may collect other data. Again, these third-party sites show me (decentishDev) simple statistics such as the number of views my download site has, but these only have to do with content I've created and uploaded.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -45,7 +71,7 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-4">
-                        <a>Copyright &copy; decentishDev 2022</a>
+                        <a>Copyright <span class="copyleft"></span> decentishDev 2022</a>
                         <br>
                         <a href="privacy-policy.html">Privacy Policy</a>
                     </div>
